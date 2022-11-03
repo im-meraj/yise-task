@@ -4,7 +4,8 @@ const SearchComponent = ({setQuery}) => {
   return (
     <>
         <div className="search">
-            <input id="search-input" type="text" placeholder="Search" onChange={(e) => setQuery(e.target.value)}/>
+            <label htmlFor="search-input">Search Bar</label>
+            <input id="search-input" type="text" placeholder="Enter a Movie Title" onChange={(e) => setQuery(e.target.value)}/>
         </div>
     </>
   )

@@ -1,4 +1,4 @@
-#card__container {
+.card__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,27 +9,50 @@
     padding: 2vw;
     margin: 1vw;
     border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 }
 
-#card__container #card__details #card__title {
-    font-size: 1.5vw;
+.card__container #card__details #card__id {
+    font-weight: normal;
+    color: #000000;
+    margin: 1vh 0;
+}
+
+.card__container #card__details #card__title {
+    font-size: 1vw;
     font-weight: bold;
     text-transform: capitalize;
-    padding-bottom: 3vh;
+    padding-bottom: 1vh;
 }
 
-#card__container #card__details #card__type {
-    font-size: 1vw;
+.card__container #card__details #card__rating {
+    /* font-size: 1vw; */
+    /* font-weight: normal; */
     text-transform: capitalize;
-    margin-top: 2vh;
+    margin-top: 1vh;
 }
 
-#card__container #card__details #card__avatar {
-    width: 200px;
-    height: 250px;
+.card__container #card__details #card__avatar {
+    width: 225px;
+    height: 275px;
 }
 
-#card__container #card__details #card__avatar img {
+.card__container #card__details #card__avatar img {
     width: 100%;
     height: 100%;
+}
+
+.card__container #card__details #card__date {
+    font-weight: normal;
+    text-transform: capitalize;
+    margin-top: 1vh;
+}
+
+@media (max-width: 500px) {
+    .card__container {
+        margin: 2vh;
+    }
+    .card__container #card__details #card__title {
+        font-size: 5vw;
+    }
 }

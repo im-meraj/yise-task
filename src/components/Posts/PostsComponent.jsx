@@ -65,6 +65,7 @@ const Posts = ({query, lazy}) => {
             name={movie.title}
             image={movie.poster_path}
             rating={movie.vote_average}
+            date={movie.release_date}
           />
         ))}
       </div>

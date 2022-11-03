@@ -10,7 +10,8 @@ header nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 5%;
-    background-color: #d90c2b;
+    /* background-color: #d90c2b; */
+    background-color: royalblue;
     color: #fff;
 }
 
@@ -32,4 +33,10 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     color: #fff;
+}
+
+@media (max-width: 500px) {
+    header nav h1 {
+        font-size: 5vw;
+    }
 }

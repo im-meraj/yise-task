@@ -6,8 +6,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #111111;
+    /* background-color: #111111; */
+    background-color: #f2f2f2;
     padding: 10px;
+}
+
+.search label {
+    color: #111;
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 #search-input {
@@ -17,4 +25,16 @@
     border-radius: 5px;
     padding: 10px;
     font-size: 20px;
+}
+
+@media (max-width: 500px) {
+    .search {
+        padding: 5px;
+    }
+    .search label {
+        font-size: 5vw;
+    }
+    #search-input {
+        width: 80%;
+    }
 }
