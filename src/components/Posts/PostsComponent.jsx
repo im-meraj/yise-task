@@ -5,7 +5,7 @@ import PaginationButtonsComponent from '../PaginationButtons/PaginationButtonsCo
 import './postsComponent.css';
 
 
-const Posts = ({query}) => {
+const Posts = ({query, lazy}) => {
   const [movies, setMovies] = useState([]);
   // const [pokemons, setPokemons] = useState([]);
   // const [allPokemons, setAllPokemons] = useState([]);
@@ -54,7 +54,6 @@ const Posts = ({query}) => {
     return <h1>Loading</h1>;
   }
 
-  console.log(movies);
 
   return (
     <>
@@ -69,6 +68,7 @@ const Posts = ({query}) => {
           />
         ))}
       </div>
+      {/* {!lazy && <PaginationButtonsComponent prevPage={prevPage} nextPage={nextPage} prevPageUrl={prevPageUrl} />} */}
       <PaginationButtonsComponent next={nextPage} prev={prevPage} prevPageUrl={prevPageUrl} />
     </>
   )

@@ -1,9 +1,14 @@
 #card__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 400px;
     height: 500px;
     background-color: #ffffff;
     padding: 2vw;
     margin: 1vw;
+    border-radius: 20px;
 }
 
 #card__container #card__details #card__title {
